@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No miramos más las estrellas — Exposición</title>
+  <meta name="description" content="No miramos más las estrellas: obras, textos y catálogos de la exposición." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#inicio" class="nav-logo">No miramos más las estrellas</a>
+    <ul class="nav-links">
+      <li><a href="#muestra">La muestra</a></li>
+      <li><a href="#obras">Obras</a></li>
+      <li><a href="#catalogos">Catálogos</a></li>
+      <li><a href="#visita">Visita</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">☀</button>
+  </nav>
+
+  <!-- PORTADA -->
+  <header id="inicio" class="hero">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="hero-content">
+      <!-- TODO: nombre del museo -->
+      <p class="hero-tag">Nombre del Museo · Sala X</p>
+      <h1 class="hero-title">No miramos<br /><em>más las estrellas</em></h1>
+      <!-- TODO: artista(s) / curaduría y fechas -->
+      <p class="hero-meta">Artista o artistas · Curaduría: Nombre Apellido</p>
+      <p class="hero-dates">00 de mes — 00 de mes de 2026</p>
+      <div class="hero-cta">
+        <a href="#obras" class="btn btn-primary">Ver obras</a>
+        <a href="#catalogos" class="btn btn-outline">Catálogos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TEXTO CURATORIAL -->
+  <section id="muestra">
+    <p class="section-label">La muestra</p>
+    <h2 class="section-title">Texto curatorial</h2>
+    <div class="curatorial">
+      <!-- TODO: reemplazá con el texto curatorial real (podés agregar o quitar párrafos) -->
+      <p class="lead">
+        Texto de ejemplo. Acá va el párrafo de presentación de la exposición: una o dos frases
+        que resuman la idea central de <em>No miramos más las estrellas</em>.
+      </p>
+      <p>
+        Texto de ejemplo. Desarrollo del texto curatorial: contexto, preguntas que plantea la muestra,
+        relación entre las obras y el recorrido propuesto.
+      </p>
+      <p>
+        Texto de ejemplo. Cierre del texto, agradecimientos o firma de la curaduría.
+      </p>
+      <p class="signature">— Nombre Apellido, curaduría</p>
+    </div>
+  </section>
+
+  <!-- OBRAS -->
+  <section id="obras">
+    <p class="section-label">Obras</p>
+    <h2 class="section-title">Galería</h2>
+    <p class="section-intro">Hacé clic en una obra para verla en grande y leer su texto.</p>
+
+    <!--
+      CÓMO AGREGAR UNA OBRA
+      1. Subí la imagen a la carpeta img/obras/ (jpg, png o webp).
+      2. Copiá un bloque <figure class="obra"> completo y cambiá:
+         - src y alt de la imagen
+         - título, autor, año y técnica
+         - el texto dentro de <div class="obra-texto"> (se muestra al abrir la obra)
+    -->
+    <div class="gallery">
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-1.svg" alt="Obra 1 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 1</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2026 · Óleo sobre tela · 100 × 80 cm</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 1: qué representa, cómo fue hecha, alguna cita del artista.</p>
+        </div>
+      </figure>
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-2.svg" alt="Obra 2 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 2</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2025 · Fotografía · 60 × 90 cm</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 2.</p>
+        </div>
+      </figure>
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-3.svg" alt="Obra 3 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 3</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2024 · Instalación · Medidas variables</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 3.</p>
+        </div>
+      </figure>
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-4.svg" alt="Obra 4 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 4</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2026 · Técnica mixta · 50 × 50 cm</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 4.</p>
+        </div>
+      </figure>
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-5.svg" alt="Obra 5 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 5</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2025 · Grabado · 30 × 40 cm</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 5.</p>
+        </div>
+      </figure>
+
+      <figure class="obra" tabindex="0">
+        <img src="img/obras/obra-6.svg" alt="Obra 6 — descripción de la imagen" loading="lazy" />
+        <figcaption>
+          <span class="obra-titulo">Título de la obra 6</span>
+          <span class="obra-autor">Nombre del artista</span>
+          <span class="obra-ficha">2026 · Video · 8 min</span>
+        </figcaption>
+        <div class="obra-texto">
+          <p>Texto de ejemplo sobre la obra 6.</p>
+        </div>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- CATÁLOGOS -->
+  <section id="catalogos">
+    <p class="section-label">Catálogos</p>
+    <h2 class="section-title">Publicaciones de la muestra</h2>
+
+    <!--
+      CÓMO AGREGAR UN CATÁLOGO
+      1. Subí el PDF a la carpeta catalogos/.
+      2. Copiá un bloque <article class="catalogo"> y cambiá el título, la descripción
+         y las dos rutas (href) al nombre de tu archivo.
+    -->
+    <div class="catalogos">
+
+      <article class="catalogo">
+        <div class="catalogo-icon" aria-hidden="true">PDF</div>
+        <div class="catalogo-info">
+          <h3>Catálogo de la exposición</h3>
+          <p>Texto curatorial, fichas técnicas e imágenes de todas las obras.</p>
+        </div>
+        <div class="catalogo-actions">
+          <a href="catalogos/catalogo-ejemplo.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver</a>
+          <a href="catalogos/catalogo-ejemplo.pdf" download class="btn btn-primary btn-sm">Descargar</a>
+        </div>
+      </article>
+
+      <article class="catalogo">
+        <div class="catalogo-icon" aria-hidden="true">PDF</div>
+        <div class="catalogo-info">
+          <h3>Hoja de sala</h3>
+          <p>Plano del recorrido y listado de obras para la visita.</p>
+        </div>
+        <div class="catalogo-actions">
+          <a href="catalogos/hoja-de-sala-ejemplo.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver</a>
+          <a href="catalogos/hoja-de-sala-ejemplo.pdf" download class="btn btn-primary btn-sm">Descargar</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- VISITA -->
+  <section id="visita">
+    <p class="section-label">Visita</p>
+    <h2 class="section-title">Información</h2>
+    <!-- TODO: completá con los datos reales del museo -->
+    <div class="info-grid">
+      <div class="info-item">
+        <h3>Dónde</h3>
+        <p>Nombre del Museo<br />Dirección 1234<br />Montevideo, Uruguay</p>
+      </div>
+      <div class="info-item">
+        <h3>Horarios</h3>
+        <p>Martes a domingo<br />10:00 — 18:00</p>
+      </div>
+      <div class="info-item">
+        <h3>Entrada</h3>
+        <p>Libre y gratuita</p>
+      </div>
+      <div class="info-item">
+        <h3>Contacto</h3>
+        <p>
+          <a href="mailto:contacto@museo.example">contacto@museo.example</a><br />
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>No miramos más las estrellas</span> · Nombre del Museo · 2026
+  </footer>
+
+  <!-- LIGHTBOX (se llena solo con el contenido de cada obra) -->
+  <dialog id="lightbox" class="lightbox" aria-label="Detalle de la obra">
+    <button class="lb-btn lb-close" aria-label="Cerrar">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Obra anterior">‹</button>
+    <button class="lb-btn lb-next" aria-label="Obra siguiente">›</button>
+    <div class="lb-body">
+      <img class="lb-img" src="" alt="" />
+      <div class="lb-info">
+        <h3 class="lb-titulo"></h3>
+        <p class="lb-autor"></p>
+        <p class="lb-ficha"></p>
+        <div class="lb-texto"></div>
+        <p class="lb-count"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module">
+    import { initTheme } from './theme.js';
+    import { initGallery } from './gallery.js';
+    initTheme();
+    initGallery();
+  </script>
+</body>
+</html>
