@@ -17,7 +17,6 @@
 
   <!-- ═══ INICIO: título + presentación ═══ -->
   <header class="intro">
-    <div class="stars" aria-hidden="true"></div>
     <div class="intro-content">
       <!-- TODO: museo / sala / fechas -->
       <p class="intro-tag">Nombre del Museo · 00 de mes — 00 de mes de 2026</p>
@@ -245,7 +244,9 @@
   <script type="module">
     import { initTheme } from './theme.js';
     import { initGallery } from './gallery.js';
+    import { initStarfield } from './starfield.js';
     initTheme();
+    initStarfield();
     initGallery();
   </script>
 </body>

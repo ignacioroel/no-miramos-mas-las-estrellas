@@ -62,7 +62,7 @@ jobs:
       - name: Preparar sitio (solo archivos públicos)
         run: |
           mkdir _site
-          cp -r index.html style.css theme.js gallery.js img catalogos _site/
+          cp -r index.html style.css theme.js gallery.js starfield.js img catalogos _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '_site'
